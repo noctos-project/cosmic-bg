@@ -42,3 +42,10 @@ opt-level = 3
 
 [dev-dependencies]
 tempfile = "3"
+
+# NoctOS: illumos needs the patched event-loop and Wayland transport crates
+# carried in the cosmic-comp fork (same versions as upstream pins here).
+# Expects that fork checked out next to this tree as ../cosmic-comp.
+[patch.crates-io]
+calloop = { path = "../cosmic-comp/noctos-vendor/calloop" }
+wayland-backend = { path = "../cosmic-comp/noctos-vendor/wayland-backend" }
