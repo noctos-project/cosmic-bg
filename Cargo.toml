@@ -48,4 +48,5 @@ tempfile = "3"
 # Expects that fork checked out next to this tree as ../cosmic-comp.
 [patch.crates-io]
 calloop = { path = "../cosmic-comp/noctos-vendor/calloop" }
+polling = { path = "../cosmic-comp/noctos-vendor/polling" }
 wayland-backend = { path = "../cosmic-comp/noctos-vendor/wayland-backend" }
